@@ -15,7 +15,7 @@
     
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #1ee0c0;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -135,7 +135,8 @@ header{
 }
 
 .logo{
-    max-width:100px ;
+    max-width:200px ;
+
 }
 
 .nav{
@@ -211,6 +212,7 @@ header{
 .hamburger{
     display: block;
     position: relative;
+    margin-top: 60px;
 }
 
 .hamburger,
