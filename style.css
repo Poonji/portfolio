@@ -377,6 +377,8 @@ header{
 }
 
 .portfolio__item{
+    position: relative;
+    overflow: hidden;
     background:var(--clr-dark);
     overflow: hidden;
 }
@@ -385,6 +387,32 @@ header{
     transition: transform 750ms cubic-bezier(.5,0,.5,1),
     opacity 250ms liner;
 }
+.project-link {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--clr-accent);
+    color: var(--clr-dark);
+    padding: 1em 1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+    transition: opacity 250ms ease-in-out;
+}
+
+.portfolio__item:hover .project-link {
+    display: block;
+}
+
+
+.project-link:hover {
+    opacity: 0.7;
+}
+
 
 .portfolio__item:focus
 {
@@ -394,6 +422,7 @@ header{
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img{
+    
     transform: scale(1.2);
     opacity: .75;
 }
